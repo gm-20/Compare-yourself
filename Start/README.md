@@ -1,3 +1,8 @@
+Webdsite Link--> http://com.aws.compare-yourself.s3-website.ap-south-1.amazonaws.com/
+Cloudfront Link--> http://dpbvxwcsohp81.cloudfront.net/
+
+For more info refer Documentation.txt
+
 # CompareMyself
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
