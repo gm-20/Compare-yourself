@@ -1,0 +1,34 @@
+Compare YourSelf Serverless App Using AWS Services
+
+
+1.Used Angular CLI Tool to setup environment and file structure.
+
+2.Used AWS services in backend 
+
+Used Amazon API Gateway service and it's cycle to create REST API with method's POST,DELETE,GET which get integrated in compare.services.ts file.
+
+Used Lambda Services in Node.js to write buisness logic once the request reaches backend.
+
+Used Dynamo DB No SQL database to store data model(.i.e User_id,Age,Height,Income)
+
+Used Cognito service for user authentication and access of website ,which is integrated in aut.services.ts file.
+Also used email OTP for confirming valid User.
+We dont have to maintain user and password database while using Cognito.
+
+Used Cloud storage service S3 to host the site on web with thw help of buckets.
+First made the app optimised by ng-build command(which gives a dist folder) and then add content of dist folder in bucket.
+http://com.aws.compare-yourself.s3-website.ap-south-1.amazonaws.com/
+
+Used Cloudfront service to distribute code at different server for faster content delivery.
+http://dpbvxwcsohp81.cloudfront.net/
+
+Also Used CloudWatch service to log changes made in different services.
+
+3.Also we can use serverless framework ,if we want to do everything through code instead of Amazon Console.
+	https://serverless.com/
+	https://github.com/awslabs/serverless-application-model
+
+4. To locally create AWS environment offline for creating Cloud application LOCALSTACK( A fully functional local AWS cloud stack) is used.
+
+Resources:
+http://youtube.com/c/academind
